@@ -1,0 +1,6 @@
+.bundle/config
+log/newrelic_agent.log
+.rbx
+vendor/rbx
+.rbenv-version
+*~

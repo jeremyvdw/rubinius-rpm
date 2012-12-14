@@ -1,0 +1,12 @@
+Demo of NewRelic RPM bug with Rubinius (2.0.0rc1)
+=================================================
+
+Step to reproduce:
+- run bundle install
+- start server with `rackup -dw` (for logs and warning)
+- simulate traffic: `ab -n 500 -c 6 -r -v 10 'http://0.0.0.0:9292/'`
+
+Everything should run smoothly.
+
+Now, open the Gemfile, comment out requirement to newrelic_rpm gem (currently 3.5.3).
+Run the same step above, watch it crash, more infos in log/newrelic_agent.log.
