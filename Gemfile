@@ -7,4 +7,5 @@ gem 'awesome_print'
 gem "sinatra", :require => "sinatra/base"
 gem 'puma'
 
-gem 'newrelic_rpm',  "~> 3.5.0"
+# Commment out to crash
+#gem 'newrelic_rpm',  "~> 3.5.0"
